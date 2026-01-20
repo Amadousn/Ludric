@@ -59,36 +59,12 @@ const Hero = ({ onCTAClick }) => {
             <span className="text-white font-medium">Tout est fait pour vous.</span>
           </motion.p>
 
-          {/* Guarantee Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.6 }}
-            className="glass-card rounded-2xl p-1 mb-12 max-w-2xl mx-auto transform transition-all duration-300 hover:scale-[1.02]"
-          >
-            <div className="bg-surface/50 rounded-xl p-6 sm:p-8 backdrop-blur-md relative overflow-hidden">
-               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent-glow to-transparent opacity-50"></div>
-              <div className="flex items-center gap-4 mb-2">
-                <div className="p-2 bg-accent-glow/10 rounded-lg">
-                    <CheckCircle2 className="w-6 h-6 text-accent-glow" />
-                </div>
-                <h3 className="text-xl font-bold text-white tracking-tight">
-                  Garantie de Résultat
-                </h3>
-              </div>
-              <p className="text-primary-muted text-left pl-[3.25rem]">
-                Si l'objectif n'est pas atteint en 90 jours, nous vous versons <span className="text-white font-bold">500€</span> pour le temps perdu. 
-                <span className="block text-sm text-primary-dark mt-1">Contractualisé et garanti.</span>
-              </p>
-            </div>
-          </motion.div>
-
           {/* Video Placeholder */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.6 }}
-            className="mb-16 relative group max-w-4xl mx-auto"
+            transition={{ delay: 0.5, duration: 0.6 }}
+            className="mb-10 relative group max-w-4xl mx-auto"
           >
              <div className="absolute -inset-1 bg-gradient-to-r from-accent-glow to-accent-purple rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
             <div className="relative aspect-video bg-surfaceHighlight border border-white/10 rounded-2xl overflow-hidden shadow-2xl">
@@ -101,6 +77,27 @@ const Hero = ({ onCTAClick }) => {
                   frameBorder="0"
                 ></iframe>
             </div>
+          </motion.div>
+
+          {/* Guarantee - Minimalist & Stylish */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.6 }}
+            className="mb-16 max-w-2xl mx-auto flex flex-col items-center text-center"
+          >
+            <div className="inline-flex items-center gap-2 text-accent-glow mb-4 px-4 py-1.5 rounded-full bg-accent-glow/5 border border-accent-glow/10 backdrop-blur-sm">
+                <CheckCircle2 className="w-4 h-4" />
+                <span className="text-xs font-bold uppercase tracking-widest">Garantie Contractuelle</span>
+            </div>
+            <p className="text-lg sm:text-xl text-primary-muted font-light leading-relaxed">
+                Si l'objectif n'est pas atteint en <span className="text-white font-medium">90 jours</span>, 
+                nous vous versons <span className="text-white font-bold underline decoration-accent-glow/50 underline-offset-4 decoration-2">500€</span>.
+            </p>
+            <p className="text-sm text-primary-dark mt-2 font-medium flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              Engagement écrit et signé
+            </p>
           </motion.div>
 
           {/* CTA */}
