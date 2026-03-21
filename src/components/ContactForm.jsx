@@ -42,7 +42,7 @@ const ContactForm = () => {
             Vérifier les <span className="text-gradient">disponibilités</span>
           </h2>
           <p className="text-xl text-primary-muted max-w-2xl mx-auto font-light">
-            Réservez votre appel stratégique. Places limitées.
+            Réservez votre appel stratégique gratuit.
           </p>
         </motion.div>
 
@@ -72,7 +72,7 @@ const ContactForm = () => {
                       value={formData.name}
                       onChange={handleChange}
                       className="block w-full pl-12 pr-4 py-4 bg-surfaceHighlight border border-white/10 rounded-xl focus:ring-2 focus:ring-accent-glow/50 focus:border-accent-glow/50 transition-all duration-300 text-white placeholder-primary-dark outline-none"
-                      placeholder="John Doe"
+                      placeholder="Votre nom"
                     />
                   </div>
                 </div>
@@ -93,7 +93,7 @@ const ContactForm = () => {
                       value={formData.email}
                       onChange={handleChange}
                       className="block w-full pl-12 pr-4 py-4 bg-surfaceHighlight border border-white/10 rounded-xl focus:ring-2 focus:ring-accent-glow/50 focus:border-accent-glow/50 transition-all duration-300 text-white placeholder-primary-dark outline-none"
-                      placeholder="john@example.com"
+                      placeholder="votre.email@gmail.com"
                     />
                   </div>
                 </div>
@@ -115,7 +115,7 @@ const ContactForm = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     className="block w-full pl-12 pr-4 py-4 bg-surfaceHighlight border border-white/10 rounded-xl focus:ring-2 focus:ring-accent-glow/50 focus:border-accent-glow/50 transition-all duration-300 text-white placeholder-primary-dark outline-none"
-                    placeholder="+33 6 12 34 56 78"
+                    placeholder="06 12 34 56 78"
                   />
                 </div>
               </div>
@@ -158,18 +158,6 @@ const ContactForm = () => {
           </div>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4, duration: 0.6 }}
-          className="mt-8 text-center"
-        >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surfaceHighlight border border-white/5 text-sm text-primary-muted">
-            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-            Places limitées cette semaine
-          </div>
-        </motion.div>
       </div>
     </section>
   );

@@ -15,7 +15,7 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-accent-glow to-accent-purple;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-glow to-accent-glow;
   }
   
   .glass-card {
@@ -23,6 +23,6 @@
   }
   
   .glow-text {
-    text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+    text-shadow: 0 0 20px rgba(255, 193, 7, 0.5);
   }
 }

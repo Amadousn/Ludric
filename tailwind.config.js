@@ -20,7 +20,7 @@ export default {
           dark: '#52525B',
         },
         accent: {
-          glow: '#3B82F6',
+          glow: '#FFC107',
           purple: '#8B5CF6',
           cyan: '#06B6D4',
         }
@@ -30,8 +30,8 @@ export default {
         'grid-pattern': "linear-gradient(to right, #1f1f1f 1px, transparent 1px), linear-gradient(to bottom, #1f1f1f 1px, transparent 1px)",
       },
       boxShadow: {
-        'glow': '0 0 40px -10px rgba(59, 130, 246, 0.5)',
-        'glow-sm': '0 0 20px -5px rgba(59, 130, 246, 0.3)',
+        'glow': '0 0 40px -10px rgba(255, 193, 7, 0.5)',
+        'glow-sm': '0 0 20px -5px rgba(255, 193, 7, 0.3)',
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',
